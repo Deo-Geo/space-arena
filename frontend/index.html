@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Arena</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <!-- Login Screen -->
+    <div id="login-screen">
+        <h1>Space Arena</h1>
+        <p>Enter a password. If it exists, you log in. If not, account created!</p>
+        <input type="password" id="password-input" placeholder="Enter Password">
+        <button id="login-btn">Play</button>
+    </div>
+
+    <!-- UI Overlay -->
+    <div id="ui" style="display:none;">
+        <div id="stats">Kills: <span id="kill-count">0</span></div>
+        <button id="leaderboard-btn">Leaderboard</button>
+    </div>
+
+    <!-- Leaderboard Modal -->
+    <div id="leaderboard-modal" style="display:none;">
+        <h2>Top Players</h2>
+        <ul id="leaderboard-list"></ul>
+        <button id="close-leaderboard">Close</button>
+    </div>
+
+    <canvas id="game-canvas"></canvas>
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>
